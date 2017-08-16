@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.tiagomeurer.exemplopassagemdeparametros.PrincipalActivity">
-// testando o gitHub
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,10 +19,11 @@
         android:id="@+id/editNome"
         android:layout_marginBottom="15dp"/>
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/idade"
+        android:inputType="number"
         android:gravity="center"/>
 
     <NumberPicker
@@ -36,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/concluir"
-        android:onClick="enviar
+        android:onClick="enviar"
         android:drawableBottom="@android:drawable/ic_menu_send"
         style="@android:style/Widget.Button"/>
 

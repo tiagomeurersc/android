@@ -10,6 +10,7 @@
     <string name="hint_nota2">Digite a nota 2</string>
     <string name="nota3">Digite a nota 3</string>
     <string name="hint_nota3">Digite a nota 3</string>
+    <string name="resultado">Resultado Final</string>
     <string name="proximo">Próximo</string>
     <string name="retornar">Retornar</string>
 </resources>

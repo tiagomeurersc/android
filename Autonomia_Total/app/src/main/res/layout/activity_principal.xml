@@ -8,105 +8,66 @@
     tools:context="com.example.tiagomeurer.autonomia_total.PrincipalActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/titulo"
-        android:textColor="#333"
-        android:textSize="18sp"
-        android:layout_gravity="center"
-        />
-
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nome_carro"
-        android:layout_marginTop="15dp"
-        />
+        android:text="@string/nomeCarro"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_nome_carro"
-        android:id="@+id/editNome"
-        />
-
+        android:hint="@string/hintCarro"
+        android:id="@+id/carro"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/km_percorrida"
-        android:layout_marginTop="15dp"
-        />
+        android:text="@string/km"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_km_percorrida"
-        android:id="@+id/editKm_percorrida"
-        />
-
+        android:hint="@string/hintKM"
+        android:id="@+id/km"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/quantidade_combustivel"
-        android:layout_marginTop="15dp"/>
+        android:text="@string/combustivel"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_quantidade_combustivel"
-        android:id="@+id/editQuantidade_combustivel"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/calcular"
-            android:onClick="calcular"
-            android:drawableLeft="@android:drawable/ic_dialog_info"
-            />
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/limpar_dados"
-            android:onClick="limparDados"
-            android:drawableLeft="@android:drawable/ic_notification_clear_all"
-            />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvCarro1"
-        android:layout_marginTop="15dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvCarro2"
-        android:layout_marginTop="15dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvCarro3"
-        android:layout_marginTop="15dp"
-        />
-
-
+        android:hint="@string/hintCombustivel"
+        android:id="@+id/fuel"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#E9E9E9"
-        android:id="@+id/layoutResultado"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCalcular"
+            android:onClick="calcular"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnLimpar"
+            android:onClick="limpar"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/consumoFinal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutFinal"
         ></LinearLayout>
-
-
-
-
-
 </LinearLayout>

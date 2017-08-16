@@ -27,6 +27,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:layout_marginRight="30dp"
             android:layout_height="wrap_content"
             android:text="@string/nota1"
             android:gravity="center"
@@ -34,6 +35,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:layout_marginRight="30dp"
             android:layout_height="wrap_content"
             android:text="@string/nota2"
             android:gravity="center"
@@ -41,6 +43,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:layout_marginRight="30dp"
             android:layout_height="wrap_content"
             android:text="@string/nota3"
             android:gravity="center"
@@ -52,32 +55,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <NumberPicker
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:id="@+id/npNota1"
-        android:layout_gravity="center"
-        >
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/npNota1"
+            android:layout_gravity="center"
+            >
         </NumberPicker>
 
-    <NumberPicker
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:id="@+id/npNota2"
-        android:layout_gravity="center"
-        >
-    </NumberPicker>
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/npNota2"
+            android:layout_gravity="center"
+            >
+        </NumberPicker>
 
-    <NumberPicker
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:id="@+id/npNota3"
-        android:layout_gravity="center"
-        >
-    </NumberPicker>
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/npNota3"
+            android:layout_gravity="center"
+            >
+        </NumberPicker>
     </LinearLayout>
 
     <Button
@@ -88,3 +94,4 @@
         />
 
 </LinearLayout>
+
