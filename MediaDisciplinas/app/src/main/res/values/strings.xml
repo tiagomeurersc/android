@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MediaDisciplinas</string>
+    <string name="disciplina1">Disciplina 1</string>
+    <string name="hint_disciplina1">Digite o nome da disciplina</string>
+    <string name="disciplina2">Disciplina 2</string>
+    <string name="hint_disciplina2">Digite o nome da disciplina 2</string>
+    <string name="nota1">Nota 1</string>
+    <string name="hint_nota1">Digite a nota 1</string>
+    <string name="nota2">Nota 2</string>
+    <string name="hint_nota2">Digite a nota 2</string>
+    <string name="nota3">Digite a nota 3</string>
+    <string name="hint_nota3">Digite a nota 3</string>
+    <string name="proximo">Próximo</string>
+    <string name="retornar">Retornar</string>
+</resources>

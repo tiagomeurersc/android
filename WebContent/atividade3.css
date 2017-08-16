@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+div{
+	background-color: BLUE;
+	width: 200px;
+	padding: 50px;
+	border: 50px solid cyan;
+	color: white;
+}
+#com{
+	box-sizing: border-box;
+}

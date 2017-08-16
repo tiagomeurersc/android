@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Preço Justo</string>
+    <string name="titulo">Preço Justo</string>
+    <string name="nome_produto">Nome do produto</string>
+    <string name="hint_nome_produto">Digite o nome do produto</string>
+    <string name="valor">Valor</string>
+    <string name="hint_valorProduto">Digite o valor do produto</string>
+    <string name="parcelas">Qtd. Parc.</string>
+    <string name="hint_parcelas">Qtd. Parc.</string>
+    <string name="juros">Juros (%)</string>
+    <string name="hint_juros">0</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar_dados">Limpar dados</string>
+
+    <string name="produto">Produto</string>
+    <string name="valorIni">Valor Inicial</string>
+    <string name="valorParc">Valor Parcelas</string>
+    <string name="valorTotal">Valor Total</string>
+    <string name="totalJuros">Total Juros</string>
+</resources>

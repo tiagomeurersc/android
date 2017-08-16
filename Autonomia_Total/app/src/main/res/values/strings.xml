@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Autonomia_Total</string>
+    <string name="titulo">Autonomia Total</string>
+    <string name="nome_carro">Nome do Carro</string>
+    <string name="hint_nome_carro">Digite o nome do carro</string>
+    <string name="km_percorrida">KM percorrida</string>
+    <string name="hint_km_percorrida">Quantos KM você percorreu?</string>
+    <string name="quantidade_combustivel">Quantidade de combustivel</string>
+    <string name="hint_quantidade_combustivel">Quanto combustivel foi gasto?</string>
+
+    <string name="calcular">Calcular</string>
+    <string name="limpar_dados">Limpar dados</string>
+
+
+    <string name="titulo2">Consumo medio da frota</string>
+    <string name="carro1">Carro 1</string>
+    <string name="carro2">Carro 2</string>
+    <string name="carro3">Carro 3</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aplicativo de teste</string>
+    <string name="tela1">Tela 1</string>
+    <string name="tela2">Tela 2</string>
+    <string name="texto1">Texto 1</string>
+    <string name="texto2">Texto 2</string>
+    <string name="texto3">Texto 3</string>
+
+</resources>

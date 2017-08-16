@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+/* Seletores por elemento */
+fieldset {
+ 	width: 500px;
+ 	background-color: #afd6ff;
+ 	border: 2px dotted;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+}
+
+/* Seletor por elemento e propriedade */
+input[required] {
+	color: orange;
+}
+
+/* Seletor por id */
+#input1 {
+	background-color: black;	
+}
+
+#btnEnviar {
+	background-color: black;
+	color: white;
+}

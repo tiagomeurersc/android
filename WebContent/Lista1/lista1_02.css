@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+#exemplo{
+	
+	width: 100px;
+	padding-left: 500px;
+	padding-right: 500px;
+	border: 100px solid red;
+	
+	
+}
+#cabecalho{
+	background-color: #ff8723;
+}
+
+#secao{	
+	/*  */box-sizing: border-box;
+	text-align: center;
+	background-color: olive;
+	position: absolute;
+	min-width: 100%;
+
+}
+
+
+.video {
+	float: left;
+	padding-left: 20px;
+	
+	
+}
+
+#rodape {
+	background-color:  black;
+	color: white;
+	position: absolute;
+	width:100%;
+	bottom: 0px;
+	
+}
+
+	
+	

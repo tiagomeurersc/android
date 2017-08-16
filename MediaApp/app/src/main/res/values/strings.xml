@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Manda chuva</string>
+    <string name="titulo">Aprovado</string>
+    <string name="nome_aluno">Nome do aluno</string>
+    <string name="hint_nome_aluno">Digite seu nome</string>
+    <string name="nota1">Nota 1</string>
+    <string name="hint_nota1">Digite a primeira nota</string>
+    <string name="nota2">Nota 2</string>
+    <string name="hint_nota2">Digita a segunda nota</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar_dados">Limpar dados</string>
+
+    <string name="aluno">Aluno</string>
+    <string name="media">Média</string>
+    <string name="situacao">Situação</string>
+    <string name="situacao_ap">Aprovado</string>
+    <string name="situacao_rp">Reprovado</string>
+</resources>
