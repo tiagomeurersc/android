@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Boletim App</string>
+    <string name="avaliacao_1">Avaliação 1</string>
+    <string name="avaliacao_2">Avaliação 2</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="professor">Professor</string>
+    <string name="hint_professor">Digite o professor</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="nota">Nota</string>
+    <string name="hint_nota">Digite a nota</string>
+
+    <string name="btn_enviar">Enviar</string>
+    <string name="btn_voltar">Voltar</string>
+</resources>
