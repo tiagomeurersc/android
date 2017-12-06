@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyIMC2</string>
+    <string name="novaImagem">Nova Imagem</string>
+    <string name="digitePeso">Digite o seu peso:</string>
+    <string name="digiteAltura">Digite a sua altura:</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar campos</string>
+    <string name="encAcademia">Encontrar uma academia</string>
+
+
+
 </resources>

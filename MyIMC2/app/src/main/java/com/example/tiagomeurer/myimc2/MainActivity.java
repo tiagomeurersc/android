@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -33,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
     private EditText etPeso;
     private EditText etAltura;
     private TextView etImc;
-
-//    protected static final int TIMER_RUNTIME = 10000;
-//    protected boolean nbActive;
+    private ImageView foto;
 
 
+
+    //metodo que solicita a permissão de acesso a camera e as pastas do dispositivo ao usuário
     public void permissao(){
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.CAMERA)
@@ -62,24 +63,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pgrBar = (ProgressBar) findViewById(R.id.progressBar);
         calc = (Button) findViewById(R.id.calc);
+        foto = (ImageView) findViewById(R.id.imagem);
+        etPeso = (EditText) findViewById(R.id.edtPeso);
+        etAltura = (EditText) findViewById(R.id.edtAltura);
+        pgrBar = (ProgressBar) findViewById(R.id.progressBar);
 
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         float peso = settings.getFloat("peso",0);
         float altura = settings.getFloat("altura",0);
-        float imc = settings.getFloat("imc",0);
         etPeso.setText(String.valueOf(peso));
         etAltura.setText(String.valueOf(altura));
-        etImc.setText(String.valueOf("O calculo do seu imc é: "+imc));
+
         setarNotificacao();
         permissao();
     }
 
+    //metodo que seta a notificaçõa para as 8h todos os dias
     public void setarNotificacao(){
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY,8);
-        calendar.set(Calendar.MINUTE,0);
+        calendar.set(Calendar.MINUTE,00);
         Intent intent = new Intent(getApplicationContext(),Notification.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
@@ -117,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
         editor.commit();
     }
 
+    //metodo que limpa os campos
     public void limpar (View view){
         TextView tvresultado = (TextView) findViewById(R.id.tvResultado);
         EditText edtpeso = (EditText) findViewById(R.id.edtPeso);
@@ -137,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //metodo para a captura de Imagem
     public void capturaImagem(View view) {
 
         //Cria uma intenção para abrir a camera fotográfica
@@ -155,5 +161,27 @@ public class MainActivity extends AppCompatActivity {
 
         //Abre a camera
         startActivityForResult(intent, RESULT_FIRST_USER);
+    }
+
+    public void verImagem( View v ){
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        arquivo = Environment.getExternalStorageDirectory() + "/Pictures/fotoMyIMC.jpg";
+        intent.setDataAndType(Uri.parse("file://" + arquivo), "image/*");
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onResume() {
+        //TODO Auto-generated method stub
+        super.onResume();
+        carregaImagem();
+    }
+
+    //Ação para mostrar a foto no imageView
+    public void carregaImagem(){
+        ImageView imageView = (ImageView) findViewById(R.id.imagem);
+        arquivo = Environment.getExternalStorageDirectory() + "/Pictures/fotoMyIMC.jpg";
+        imageView.setImageURI( Uri.parse(arquivo) );
     }
 }

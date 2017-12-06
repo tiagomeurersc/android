@@ -19,14 +19,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:clickable="true"
-            android:onClick="capturaImagem"
+            android:onClick="verImagem"
             android:id="@+id/imagem"
-            tools:ignore="OnClick" />
+            android:contextClickable="true"/>
+
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="nomaImagem"
+            android:text="@string/novaImagem"
             android:onClick="capturaImagem"
             />
     </LinearLayout>
@@ -34,7 +35,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digite o seu peso:"
+        android:text="@string/digitePeso"
         />
 
     <EditText
@@ -46,7 +47,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digite a sua altura"/>
+        android:text="@string/digiteAltura"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -57,20 +58,20 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calcular"
+        android:text="@string/calcular"
         android:id="@+id/calc"
         android:onClick="calcular"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Limpar campos"
+        android:text="@string/limpar"
         android:onClick="limpar"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Encontrar uma academia"
+        android:text="@string/encAcademia"
         android:onClick="encontrarAcademia"/>
 
 
@@ -80,7 +81,6 @@
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:max="100"
         android:id="@+id/progressBar"/>
-
 
     <TextView
         android:layout_width="match_parent"

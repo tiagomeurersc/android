@@ -14,10 +14,10 @@ import java.util.Random;
 
 public class Notification extends BroadcastReceiver {
 
-     String[] motivation = {"Que tal praticar alguns exercícios agora?","Você é o que você come!","Já pensou em acordar mais cedo para aproveitar mais o dia?",
+     String[] frases = {"Que tal praticar alguns exercícios agora?","Você é o que você come!","Já pensou em acordar mais cedo para aproveitar mais o dia?",
              "Stay hungry, stay foolish!","Será que vai ficar bom esse aplicativo?"};
-        int idx = new Random().nextInt(motivation.length);
-        String rand = (motivation[idx]);
+        int idx = new Random().nextInt(frases.length);
+        String rand = (frases[idx]);
         @Override
         public void onReceive(Context context, Intent intent) {
             NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
